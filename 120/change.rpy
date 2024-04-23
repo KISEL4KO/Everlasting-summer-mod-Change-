@@ -78,16 +78,16 @@ label prologue123:
     #останавливаем музыку
     stop music
     #закрываем глаза
-    show blink
+    show blink with dissolve
     #Слова Ольги дмитревны
     mtp"Семен вставай,хватит спать,такими темпами все водные процедуры проспишь,а может еще и линейку."
 #показываем дом внутри
     scene bg int_house_of_dv_day
     #показываем злую ольгу дмитревну
     show mt pioneer angry 
-    hide blink
     
-    show unblink
+    
+    show unblink with dissolve
     play music bg_sound2
     "Открыв один глаз я посмотрел на недовольную Ольгу Димтриевну."
     
@@ -99,9 +99,11 @@ label day_sevenMode:
     #слова Семена
     me"Хорошо, хорошо, я встаю."
     #показать спокойную Ольгу Димтриевну
-    show mt pioneer smile close with dissolve
+    show mt pioneer smile close with dissolve2
     
+    mtp"..."
     #показываем дом внутри
+    play sound sfx_close_door_1
     scene bg int_house_of_dv_day with dissolve
     "На самом деле вставать мне вовсе не хотелось,но встать всё-же пришлось,конечно под сильными упрёками Ольги Дмитриевны,которые я особо не слышал."
     "Взяв свои умывальные принадлежности, я поплелся к довольно уже привычным умывальникам с ледяной водой."
